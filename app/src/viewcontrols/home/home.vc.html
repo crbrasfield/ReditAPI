@@ -1,0 +1,8 @@
+<h1>Reddit: Lord of the Rings</h1>
+
+<plat-foreach plat-context="posts">
+    <h3 class="postTitle">Title: {{title}}</h3>
+    <h4 class="postAuthor">Author: {{author}}</h4>
+    <p class="postUrl"><a href = "{{url}}">View post attachment.</a></p>
+    <plat-button plat-tap="getSpecificPost(id)" class="postDetails button-primary">Click to view details.</plat-button>
+</plat-foreach>
